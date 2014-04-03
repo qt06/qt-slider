@@ -1,0 +1,215 @@
+body {
+  background-color: #FFF;
+  color: #444;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Droid Serif", Georgia, "Times New Roman", STHeiti, serif;
+  font-size: 87.5%;
+}
+
+a {
+  color: #3354AA;
+  text-decoration: none;
+}
+a:hover, a:active {
+  color: #444;
+}
+pre, code {
+  padding: 2px 4px;
+  background: #F3F3F0;
+  font-family: Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
+  font-size: .92857em;
+}
+code { color: #B94A48; }
+pre {
+  padding: 8px;
+  overflow: auto;
+  max-height: 400px;
+}
+pre code {
+  padding: 0;
+  color: #444;
+}
+
+blockquote {
+  margin: 1em 1.5em;
+  padding-left: 1.5em;
+  border-left: 4px solid #F3F3F0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+  padding: 5px;
+  border: 1px solid #E9E9E9;
+  width: 100%;
+
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+textarea {
+  resize: vertical;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+#slides {
+     display: none;
+}
+   
+#slides li a {
+    color: #000;
+}
+   
+#slides div {
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFF;
+}
+   
+#slides div p{
+    padding: 10px 30px;
+    margin: 0;
+}
+   
+#slides div h2{
+    padding: 15px 30px 0 30px;
+    margin: 0;
+}
+   
+#slides div img {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+}
+
+#slides .slidesjs-navigation {
+  margin-top:5px;
+}
+
+a.slidesjs-next,
+a.slidesjs-previous,
+a.slidesjs-play,
+a.slidesjs-stop {
+    background-image: url("./img/btns-next-prev.png");
+    background-repeat: no-repeat;
+    display:block;
+    width:12px;
+	height:18px;
+	overflow: hidden;
+	text-indent: -9999px;
+	margin-right:5px;
+	float: left;
+}
+
+a.slidesjs-next {
+	margin-right:10px;
+	background-position: -12px 0;
+}
+
+a.slidesjs-stop {
+	margin-right:25px;
+	background-position: -12px 0;
+}
+
+a.slidesjs-play {
+	margin-right:28px;
+	background-position: -12px 0;
+}
+
+a:hover.slidesjs-next, a:focus.slidesjs-next {
+    background-position: -12px -18px;
+}
+
+a.slidesjs-previous {
+    background-position: 0 0;
+}
+
+a:hover.slidesjs-previous, a:focus.slidesjs-previous {
+    background-position: 0 -18px;
+}
+
+a.slidesjs-play {
+    width:15px;
+    background-position: -25px 0;
+}
+
+a:hover.slidesjs-play, a:focus.slidesjs-play {
+    background-position: -25px -18px;
+}
+
+a.slidesjs-stop {
+    width:18px;
+    background-position: -41px 0;
+}
+
+a:hover.slidesjs-stop, a:focus.slidesjs-stop {
+  background-position: -41px -18px;
+}
+
+.slidesjs-pagination {
+    margin: 7px 20px 0  20px;
+    padding: 0px;
+    list-style: none;
+    float: left;
+}
+
+.slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url("./img/pagination.png");
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+}
+
+.slidesjs-pagination .active a{
+    background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover, .slidesjs-pagination li a:focus {
+    background-position: 0 -26px;
+}
+
+#slides a:link,
+#slides a:visited {
+    color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+    color: #9e2020
+}
+
+#footer {
+  padding: 3em 0;
+  line-height: 1.5;
+  text-align: center;
+  color: #999;
+}
+.sr-only {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
