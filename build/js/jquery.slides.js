@@ -69,25 +69,26 @@
         this.options.effect.slide.speed = this.options.effect.slide.speed / 2;
       }
       $element.css({
-        overflow: "hidden"
+        //overflow: "hidden"
       });
+
       $element.slidesContainer = $element.children().not(".slidesjs-navigation", $element).wrapAll("<div class='slidesjs-container'>", $element).parent().css({
-        overflow: "hidden",
-        position: "relative"
+        //overflow: "hidden",
+        //position: "relative"
       });
       $(".slidesjs-container", $element).wrapInner("<div class='slidesjs-control'>", $element).children();
       $(".slidesjs-control", $element).css({
-        position: "relative",
-        left: 0
+        //position: "relative",
+        //left: 0
       });
       $(".slidesjs-control", $element).children().addClass("slidesjs-slide").css({
-        position: "absolute",
-        top: 0,
-        left: 0,
+        //position: "absolute",
+        //top: 0,
+        //left: 0,
         width: "100%",
         zIndex: 0,
-        display: "none",
-        webkitBackfaceVisibility: "hidden"
+        display: "none"
+        //webkitBackfaceVisibility: "hidden"
       });
       $.each($(".slidesjs-control", $element).children(), function(i) {
         var $slide;
